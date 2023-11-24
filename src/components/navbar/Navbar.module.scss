@@ -1,0 +1,57 @@
+.navbar {
+  width: 280px;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  background-color: #222;
+  height: 100%;
+  padding: 64px 16px 16px 16px;
+
+  input {
+    background-color: #333;
+    border: 1px solid #444;
+    outline: none;
+    padding: 12px;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    transition: 0.15s;
+    width: 100%;
+
+    &:hover {
+      background-color: #444;
+      border: 1px solid #555;
+    }
+
+    &:focus {
+      outline: 1px solid white;
+    }
+  }
+
+  .loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      margin-top: 24px;
+      width: 48px;
+      height: 48px;
+      border: 5px solid #fff;
+      border-bottom-color: transparent;
+      border-radius: 50%;
+      display: inline-block;
+      box-sizing: border-box;
+      animation: rotation 1s linear infinite;
+    }
+  }
+
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}

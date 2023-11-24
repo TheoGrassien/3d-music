@@ -1,0 +1,41 @@
+.player {
+  position: absolute;
+  bottom: 32px;
+  background-color: #333;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  border-radius: 4px;
+  gap: 32px;
+  width: 300px;
+}
+
+.song {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  .title {
+    max-width: 150px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+}
+
+.button {
+  cursor: pointer;
+  transition: 0.15s;
+
+  &:hover {
+    scale: 1.1;
+  }
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
